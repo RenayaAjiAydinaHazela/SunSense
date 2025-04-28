@@ -15,7 +15,7 @@ Data kondisi juga dikirimkan melalui Bluetooth ke perangkat lain.
 
 ## 🗂️ Struktur Program
 - **Program Simulasi** → Program ini dibuat khusus untuk simulasi menggunakan komponen sederhana.
-- **Program Asli Hardware** → *(Tidak dibahas di README ini, fokus ke simulasi.)*
+- **Program Asli Hardware** → *(Progress)*
 
 ---
 
