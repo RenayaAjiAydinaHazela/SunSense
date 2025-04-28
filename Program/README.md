@@ -25,15 +25,12 @@ Data kondisi juga dikirimkan melalui Bluetooth ke perangkat lain.
   - Potensio 2 → Simulasi sensor cahaya.
 
 - **3 Push Button**:
-  - Push Button 1 → Simulasi kondisi hujan.
-  - Push Button 2 → Ganti mode Otomatis/Manual.
-  - Push Button 3 → Kontrol jemuran masuk/keluar (hanya aktif di mode Manual).
+  - Push Button 1 (Warna Biru) → Simulasi kondisi hujan.
+  - Push Button 2 (Warna Merah)→ Ganti mode Otomatis/Manual.
+  - Push Button 3 (Warna Hijau)→ Kontrol jemuran masuk/keluar (hanya aktif di mode Manual).
 
 - **1 Servo Motor**:
   - Untuk menggerakkan jemuran keluar (sudut 45°) atau masuk (sudut 0°).
-
-- **Bluetooth Module** *(optional)*:
-  - Untuk mengirim data status jemuran ke aplikasi Bluetooth Terminal di laptop/HP.
 
 ---
 
