@@ -53,7 +53,9 @@ Data kondisi juga dikirimkan melalui Bluetooth ke perangkat lain.
 5. **Kirim data** suhu, cahaya, kondisi hujan, mode, dan posisi jemuran melalui Bluetooth.
 
 ---
-
+6. **Contoh Gambar Simulasi**
+  <img src="https://github.com/RenayaAjiAydinaHazela/SunSense/blob/main/Program/Screenshot%202025-04-29%20114008.png">
+  ---
 ## 📄 Cara Mensimulasikan
 Gunakan ini link ini untuk simulasi ke wokwi
  ```bash
