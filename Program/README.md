@@ -1,4 +1,4 @@
-# Program Jemuran Otomatis 
+# Program 
 
 
 ## 📋 Deskripsi Program Simulasi
