@@ -58,6 +58,4 @@ Data kondisi juga dikirimkan melalui Bluetooth ke perangkat lain.
   ---
 
 ## 📄 Cara Mensimulasikan
-Gunakan ini link ini untuk simulasi ke wokwi
- ```bash
-https://wokwi.com/projects/429473945254121473
+Gunakan link ini untuk simulasi ke wokwi https://wokwi.com/projects/429473945254121473
