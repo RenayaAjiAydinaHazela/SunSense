@@ -111,8 +111,6 @@ D4 Teknik Elektronika
 **Insititusi :** 
 Politeknik Elektronika Negeri Surabaya
 
----
-
 ## 👥 Project Teams
 
 | **NRP** | **Nama** | **Jobdesk** | **Akun** |
