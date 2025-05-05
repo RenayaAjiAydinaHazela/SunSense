@@ -1,13 +1,15 @@
 # SunSense : Inovasi Jemuran Cerdas Otomatis untuk Rumah Tangga Modern
 
+> *Matahari bisa absen kapan saja, tapi cucian tetap harus kering*
+>
+
 <aside>
 ⛅ Teknologi pintar yang mengikuti perubahan cuaca, menjaga jemuran Anda tetap aman di tengah kondisi tak menentu dan kesibukan yang tak bisa ditinggal
 
 </aside>
 
 
-> *Matahari bisa absen kapan saja, tapi cucian tetap harus kering*
-> 
+
 
 ## 💡 Tentang SunSense
 
@@ -96,9 +98,7 @@ Dengan pendekatan ini, **SunSense** tidak hanya menghadirkan inovasi yang bergun
 
 ## 🎓 In Collaboration With
 
-![image.png](attachment:10cbeb4f-f168-44d5-9e3d-45f7928b6d54:image.png)
-
-> **Dosen Pengampu :** 
+**Dosen Pengampu :** 
 Akhmad Hendriawan S.T., M.T.
 197501272002121003
 
@@ -110,7 +110,6 @@ D4 Teknik Elektronika
 
 **Insititusi :** 
 Politeknik Elektronika Negeri Surabaya
-> 
 
 ---
 
