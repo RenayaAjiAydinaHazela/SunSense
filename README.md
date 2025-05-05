@@ -1,9 +1,7 @@
 # SunSense : Inovasi Jemuran Cerdas Otomatis untuk Rumah Tangga Modern
 
 <aside>
-⛅
-
-Teknologi pintar yang mengikuti perubahan cuaca, menjaga jemuran Anda tetap aman di tengah kondisi tak menentu dan kesibukan yang tak bisa ditinggal
+⛅ Teknologi pintar yang mengikuti perubahan cuaca, menjaga jemuran Anda tetap aman di tengah kondisi tak menentu dan kesibukan yang tak bisa ditinggal
 
 </aside>
 
