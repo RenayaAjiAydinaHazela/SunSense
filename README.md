@@ -5,12 +5,12 @@
 
 </aside>
 
+
 > *Matahari bisa absen kapan saja, tapi cucian tetap harus kering*
 > 
 
 ## 💡 Tentang SunSense
 
----
 
 **SunSense** adalah solusi inovatif untuk pengelolaan jemuran di rumah, mengintegrasikan teknologi otomatisasi dan sensor cerdas untuk menciptakan pengalaman yang lebih efisien, nyaman, dan ramah lingkungan. Dengan menggunakan mikrokontroler dan berbagai sensor, sistem ini dapat secara otomatis mengatur posisi jemuran berdasarkan kondisi cuaca terkini, memberikan kenyamanan ekstra bagi penggunanya.
 
@@ -18,9 +18,9 @@ Saat cuaca cerah dan kering, jemuran akan terbuka secara otomatis untuk mengerin
 
 Sebagai proyek open-source, **SunSense** terbuka untuk pengembangan lebih lanjut. Dengan pendekatan ini, sistem dapat beradaptasi dengan kebutuhan yang lebih beragam di masa depan, memberi peluang bagi para pengembang untuk berkontribusi dan memperkaya fungsionalitas sistem.
 
-## 🎯 Visi dan Misi SunSense
-
 ---
+
+## 🎯 Visi dan Misi SunSense
 
 ### Visi
 
@@ -36,9 +36,9 @@ Menjadi solusi utama dalam kehidupan rumah tangga modern dengan menghadirkan sis
 
 Dengan pendekatan ini, **visi** dan **misi** SunSense menggabungkan konsep inovasi, ramah lingkungan, otomatisasi, dan kolaborasi komunitas, serta menyoroti pentingnya keberlanjutan dan penggunaan teknologi cerdas untuk meningkatkan kualitas hidup rumah tangga.
 
-## 📌 Keunggulan SunSense
-
 ---
+
+## 📌 Keunggulan SunSense
 
 **SunSense** bukan hanya sekadar alat otomatis, tetapi sebuah solusi inovatif yang menggabungkan kecanggihan teknologi dan kenyamanan pengguna. Berikut adalah keunggulan utama dari **SunSense**:
 
@@ -61,9 +61,9 @@ Dengan pendekatan ini, **visi** dan **misi** SunSense menggabungkan konsep inova
 
 Keunggulan-keunggulan ini menjadikan **SunSense** tidak hanya sebagai alat otomatis biasa, tetapi juga solusi yang memberikan kenyamanan lebih, efisiensi energi, dan fleksibilitas yang dapat berkembang sesuai kebutuhan pengguna.
 
-## 📈 Potensi Pasar dan Peluang Investasi
-
 ---
+
+## 📈 Potensi Pasar dan Peluang Investasi
 
 **SunSense** memiliki potensi pasar yang besar dalam sektor rumah pintar (smart home) dan teknologi ramah lingkungan. Dengan semakin meningkatnya minat terhadap solusi rumah tangga yang otomatis dan efisien, **SunSense** siap memenuhi kebutuhan masyarakat yang menginginkan cara hidup yang lebih praktis, hemat energi, dan ramah lingkungan.
 
@@ -92,9 +92,9 @@ Keunggulan-keunggulan ini menjadikan **SunSense** tidak hanya sebagai alat otoma
 
 Dengan pendekatan ini, **SunSense** tidak hanya menghadirkan inovasi yang berguna dalam kehidupan sehari-hari, tetapi juga membuka peluang besar untuk berkembang di pasar lokal dan internasional, sambil mendukung tren global menuju rumah pintar dan keberlanjutan energi.
 
-## 🎓 In Collaboration With
-
 ---
+
+## 🎓 In Collaboration With
 
 ![image.png](attachment:10cbeb4f-f168-44d5-9e3d-45f7928b6d54:image.png)
 
@@ -112,9 +112,9 @@ D4 Teknik Elektronika
 Politeknik Elektronika Negeri Surabaya
 > 
 
-## 👥 Project Teams
-
 ---
+
+## 👥 Project Teams
 
 | **NRP** | **Nama** | **Jobdesk** | **Akun** |
 | --- | --- | --- | --- |
@@ -124,9 +124,9 @@ Politeknik Elektronika Negeri Surabaya
 | 2123600055 | Renaya Aji Aydina Hazela |  |  |
 | 2123600060 | Rahma Aulia Hafidz |  |  |
 
-## ✨ Mendukung Pengembangan Bersama
-
 ---
+
+## ✨ Mendukung Pengembangan Bersama
 
 Sebagai proyek open-source, **SunSense** tidak hanya memberikan solusi inovatif bagi pengelolaan jemuran, tetapi juga menawarkan kesempatan bagi para pengembang, inovator, dan komunitas untuk berkolaborasi dalam menciptakan teknologi yang lebih canggih dan terintegrasi. Kolaborasi adalah kunci untuk menghasilkan solusi yang lebih baik, efisien, dan dapat diakses oleh lebih banyak orang.
 
@@ -153,9 +153,9 @@ Kami mengundang para profesional, pengembang, dan inovator untuk bergabung dalam
 
 Dengan pendekatan ini, **SunSense** tidak hanya berfungsi sebagai solusi otomatisasi jemuran, tetapi juga sebagai platform terbuka untuk pengembangan bersama, membuka peluang bagi kolaborasi yang lebih luas dalam menghadirkan teknologi yang lebih baik dan lebih bermanfaat bagi masyarakat.
 
-## 📞 Bergabunglah dengan Kami
-
 ---
+
+## 📞 Bergabunglah dengan Kami
 
 **SunSense** lebih dari sekadar proyek teknologi, tetapi juga peluang untuk berinvestasi dalam menciptakan masa depan rumah tangga yang lebih cerdas, efisien, dan ramah lingkungan. Kami percaya bahwa kolaborasi adalah kunci untuk membawa inovasi ini ke lebih banyak rumah di seluruh dunia.
 
