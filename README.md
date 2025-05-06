@@ -1,6 +1,6 @@
 # SunSense : Inovasi Jemuran Cerdas Otomatis untuk Rumah Tangga Modern
 
-> *Matahari bisa absen kapan saja, tapi cucian tetap harus kering*
+> *Matahari bisa absen kapan saja, tapi cucian tetap harus kering !!*
 >
 
 <aside>
