@@ -28,6 +28,19 @@ Simulasi dilakukan menggunakan potensiometer dan push button untuk menggantikan 
 
 ---
 
+## 🛠️ Komponen Hardware Ke Arduino Nano
+
+**Pastikan Pin yang di inisialisasi pada program seperti ini**
+| Perangkat            | Pin Arduino Nano | Jenis Pin | Keterangan             |
+|----------------------|------------------|-----------|------------------------|
+| LDR                  | A0               | Analog    | Sensor cahaya          |
+| FC-37 (Sensor Hujan) | D2               | Digital   | Sensor hujan           |
+| DHT22                | D3               | Digital   | Suhu & kelembapan      |
+| Servo Motor          | D5               | PWM       | Kendali aktuator       |
+| HC-05 Bluetooth      | D6 (TX), D7 (RX) | UART      | Komunikasi Serial      |
+
+---
+
 ## 🧠 Alur Program
 1. **Baca nilai potensiometer**:
    - Suhu: 0–50°C.
