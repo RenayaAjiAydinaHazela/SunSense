@@ -17,6 +17,7 @@ Simulasi dilakukan menggunakan potensiometer dan push button untuk menggantikan 
 - **2 Potensiometer**:
   - Potensio 1 → Simulasi sensor suhu.
   - Potensio 2 → Simulasi sensor cahaya.
+  - Potensio 3 → Simulasi sensor kelembapan.
 
 - **3 Push Button**:
   - Push Button 1 (Warna Biru) → Simulasi kondisi hujan.
@@ -33,11 +34,11 @@ Simulasi dilakukan menggunakan potensiometer dan push button untuk menggantikan 
 **Pastikan Pin yang di inisialisasi pada program seperti ini**
 | Perangkat            | Pin Arduino Nano | Jenis Pin | Keterangan             |
 |----------------------|------------------|-----------|------------------------|
-| LDR                  | A0               | Analog    | Sensor cahaya          |
-| FC-37 (Sensor Hujan) | D2               | Digital   | Sensor hujan           |
-| DHT22                | D3               | Digital   | Suhu & kelembapan      |
-| Servo Motor          | D5               | PWM       | Kendali aktuator       |
-| HC-05 Bluetooth      | D6 (TX), D7 (RX) | UART      | Komunikasi Serial      |
+| LDR                  | A1               | Analog    | Sensor cahaya          |
+| FC-37 (Sensor Hujan) | D4               | Digital   | Sensor hujan           |
+| DHT22                | D5               | Digital   | Suhu & kelembapan      |
+| Servo Motor          | D9               | PWM       | Kendali aktuator       |
+| HC-05 Bluetooth      | D0 (TX), D1 (RX) | UART      | Komunikasi Serial      |
 
 ---
 
@@ -65,6 +66,6 @@ Simulasi dilakukan menggunakan potensiometer dan push button untuk menggantikan 
 6. **Contoh Gambar Simulasi & Video Simulasi**
    
    👉 [Klik di sini untuk membuka simulasi di Wokwi](https://wokwi.com/projects/429473945254121473)
-  <img src="https://github.com/RenayaAjiAydinaHazela/SunSense/blob/main/Program/Asset/Screenshot%202025-05-11%20183518.png">
+  <img src="https://github.com/RenayaAjiAydinaHazela/SunSense/blob/main/Program/Asset/Screenshot%202025-05-11%20200524.png">
   
 ---
