@@ -16,15 +16,15 @@ SunSense dibangun dari serangkaian komponen utama yang saling terintegrasi dan m
 
 | Komponen | Tipe | Fungsi | Harga |
 | --- | --- | --- | --- |
-| Mikrokontroler | Nano | Mengelola seluruh proses logika, pengambilan keputusan berdasarkan input sensor. | 40.000 |
+| Mikrokontroler | Arduino Nano | Mengelola seluruh proses logika, pengambilan keputusan berdasarkan input sensor. | 40.000 |
 | Sensor Cahaya | LDR | Mendeteksi tingkat pencahayaan matahari. Digunakan untuk memutuskan kapan jemuran boleh terbuka. | 2.000 |
 | Sensor Hujan | Rain Drop | Menentukan keberadaan air/hujan melalui hambatan listrik. Jika mendeteksi hujan, sistem menutup jemuran. | 15.000 |
-| DHT 22 | Memberikan data lingkungan tambahan untuk mengatur kondisi optimal pengeringan. | 25.000 |
-| Motor Servo |  | Menggerakkan mekanisme buka-tutup jemuran secara otomatis. | 50.000 |
+| Sensor Suhu & Kelembapan | DHT 22 | Memberikan data lingkungan tambahan untuk mengatur kondisi optimal pengeringan. | 25.000 |
+| Motor Servo | SG90 | Menggerakkan mekanisme buka-tutup jemuran secara otomatis. | 50.000 |
 | Regulator Tegangan | L7805 | Mengatur dari batrai agar menjadi 5 V sesuai dengan mikrokontroler Arduino Nano. | 1.500 |
 | Bluetooth Module | HC - 05 | Komunikasi jarak dekat untuk kontrol manual dan monitoring via aplikasi mobile. | 35.000 |
-| Baterai Lion 3,7 V (2) | Menyediakan daya untuk menggerakkan motor dan sistem kontrol secara keseluruhan. | 24.000 |
-| PCB | Menyusun dan menyambungkan seluruh rangkaian elektronik secara rapi. | 25.000 |
+| Baterai | Lion 3,7 V (2) | Menyediakan daya untuk menggerakkan motor dan sistem kontrol secara keseluruhan. | 24.000 |
+| PCB | | Menyusun dan menyambungkan seluruh rangkaian elektronik secara rapi. | 25.000 |
 | Bearing / Pulley |  | Mendukung gerakan mekanik agar lebih halus, stabil, dan minim gesekan. | 20.000 |
 
 Tak hanya berfokus pada kecanggihan sensor dan kendali otomatis, SunSense juga mengedepankan stabilitas sistem secara menyeluruh. Desainnya memperhatikan keteraturan sirkuit elektronik agar lebih aman dan efisien, sekaligus memastikan pergerakan mekanik berjalan dengan lancar tanpa hambatan berarti. 
