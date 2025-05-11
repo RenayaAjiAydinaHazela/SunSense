@@ -6,7 +6,7 @@
 #define DHT_PIN 5
 #define DHT_TYPE DHT22
 #define LDR_PIN A1         // LDR
-#define RAIN_BUTTON_PIN 2  // Push button hujan
+#define RAIN_BUTTON_PIN 4  // Push button hujan
 #define SERVO_PIN 9        // Servo
 #define MODE_BUTTON_PIN 3      // Tombol ganti mode Otomatis/Manual
 #define CONTROL_BUTTON_PIN 4   // Tombol kontrol jemuran Masuk/Keluar (hanya Manual)
@@ -118,8 +118,8 @@ void setup() {
 }
 
 void loop() {
-  readModeButton();
-  readControlButton();
+  readModeButton(); // Baca push button mode Otomatis atau Manual
+  readControlButton(); // Control Push Button
 
   if (millis() - lastUpdate > UPDATE_INTERVAL) {
     updateSensors();
@@ -127,7 +127,7 @@ void loop() {
       makeAutomaticDecision();
     }
     controlServo();
-    sendData();
-    lastUpdate = millis();
+    sendData(); // Kirim data ke HC-05
+    lastUpdate = millis(); // Timer agar tidak ngeblock program lain
   }
 }
