@@ -13,19 +13,17 @@ Simulasi dilakukan menggunakan potensiometer dan push button untuk menggantikan 
 
 ---
 
-## 🛠️ Komponen Simulasi
-- **2 Potensiometer**:
-  - Potensio 1 → Simulasi sensor suhu.
-  - Potensio 2 → Simulasi sensor cahaya.
-  - Potensio 3 → Simulasi sensor kelembapan.
+## 🛠️ Komponen Simulasi 
 
-- **3 Push Button**:
-  - Push Button 1 (Warna Biru) → Simulasi kondisi hujan.
-  - Push Button 2 (Warna Merah)→ Ganti mode Otomatis/Manual.
-  - Push Button 3 (Warna Hijau)→ Kontrol jemuran masuk/keluar (hanya aktif di mode Manual).
-
-- **1 Servo Motor**:
-  - Untuk menggerakkan jemuran keluar (sudut 45°) atau masuk (sudut 0°).
+| Jenis Komponen     | Nama / Warna            | Fungsi                                                                 |
+|--------------------|-------------------------|------------------------------------------------------------------------|
+| **Potensiometer 1**| —                       | Simulasi **sensor suhu**                                              |
+| **Potensiometer 2**| —                       | Simulasi **sensor cahaya (LDR)**                                      |
+| **Potensiometer 3**| —                       | Simulasi **sensor kelembapan**                                        |
+| **Push Button 1**  | Biru                    | Simulasi **kondisi hujan** (LOW = hujan)                              |
+| **Push Button 2**  | Merah                   | Ganti **mode Otomatis / Manual**                                      |
+| **Push Button 3**  | Hijau                   | Kontrol **jemuran masuk / keluar** (hanya aktif di mode Manual)       |
+| **Servo Motor**    | —                       | Gerakkan jemuran ke: **45° (keluar)** atau **0° (masuk)**             |
 
 ---
 
