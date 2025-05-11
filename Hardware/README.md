@@ -1,6 +1,6 @@
 # 🌞 SunSense: Sistem Monitoring Cuaca dan Cahaya Berbasis Arduino Nano
 
-Proyek ini bertujuan untuk memantau kondisi lingkungan seperti cahaya, hujan, suhu, dan kelembapan menggunakan Arduino Nano dan berbagai sensor yang digunakan untuk projek jemuran pintar. Data dapat dipantau secara langsung dan dikontrol melalui modul Bluetooth HC-05.
+Proyek ini bertujuan untuk memantau kondisi lingkungan seperti cahaya, hujan, suhu, dan kelembapan menggunakan Arduino Nano dan berbagai sensor yang digunakan untuk projek jemuran pintar. Data dan kontrol dapat dipantau secara langsung dan dikontrol melalui modul Bluetooth HC-05.
 
 ---
 
