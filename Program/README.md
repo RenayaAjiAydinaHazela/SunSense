@@ -52,6 +52,6 @@ Simulasi dilakukan menggunakan potensiometer dan push button untuk menggantikan 
 6. **Contoh Gambar Simulasi & Video Simulasi**
    
    👉 [Klik di sini untuk membuka simulasi di Wokwi](https://wokwi.com/projects/429473945254121473)
-  <img src="https://github.com/RenayaAjiAydinaHazela/SunSense/blob/main/Program/Asset/Screenshot%202025-04-29%20114008.png">
+  <img src="https://github.com/RenayaAjiAydinaHazela/SunSense/blob/main/Program/Asset/Screenshot%202025-05-11%20183518.png">
   
 ---
