@@ -94,16 +94,16 @@ Instal melalui Library Manager di Arduino IDE:
 
 ---
 
-## 🖼️ Preview Hardware
+## 🖼️ Preview
 
 ### 🧾 Skematik:
-![Skematik](hardware/SunSense.kicad_sch.png)
+![Skematik](Hardware/KiCad/Schematic/Schematic SunSense from KiCAD.png)
 
 ### 🧱 PCB Layout:
-![PCB Layout](hardware/SunSense_Board.png)
+![PCB Layout](Hardware/KiCad/Board/Board SunSunse from KiCad.png)
 
 ### 🧿 Tampilan 3D:
-![3D Board View](hardware/SunSense_3D.png)
+![3D Board View](Hardware/KiCad/3D Design/3D Design from Board SunSense (front).png)
 
 ---
 
