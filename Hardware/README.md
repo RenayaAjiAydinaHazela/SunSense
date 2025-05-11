@@ -14,7 +14,6 @@ Proyek ini bertujuan untuk memantau kondisi lingkungan seperti cahaya, hujan, su
   - [Analog Input](#-analog-input)
   - [Sensor Digital (non-analog)](#-sensor-digital-non-analog)
 - [Library Arduino](#-library-arduino)
-- [Preview Hardware](#-preview-hardware)
 
 ---
 
@@ -91,20 +90,6 @@ Instal melalui Library Manager di Arduino IDE:
 - `DHT sensor library`
 - `Adafruit Unified Sensor`
 - `Servo.h` – Tersedia secara default di Arduino IDE
-
----
-
-## 🖼️ Preview
-
-### 🧾 Skematik:
-![Skematik](/Hardware/KiCad/Schematic/Schematic SunSense from KiCAD.png)
-
-### 🧱 PCB Layout:
-![PCB Layout](/Hardware/KiCad/Board/Board SunSunse from KiCad.png)
-
-### 🧿 Tampilan 3D:
-![3D Board View](/Hardware/KiCad/3D Design/3D Design from Board SunSense (front).png)
-
 ---
 
 ## 🏷️ Lisensi
