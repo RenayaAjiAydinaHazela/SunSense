@@ -1,15 +1,9 @@
 # Program 
 
-
 ## 📋 Deskripsi Program Simulasi
 Program ini mensimulasikan sistem jemuran otomatis atau manual menggunakan Arduino.  
 Simulasi dilakukan menggunakan potensiometer dan push button untuk menggantikan sensor fisik.
 
-Terdapat dua mode:
-- **Otomatis**: Jemuran keluar/masuk berdasarkan data simulasi dari potensiometer dan push button.
-- **Manual**: Jemuran dikontrol secara manual menggunakan push button.
-
-Data kondisi juga dikirimkan melalui Bluetooth ke perangkat lain.
 
 ---
 
@@ -50,13 +44,14 @@ Data kondisi juga dikirimkan melalui Bluetooth ke perangkat lain.
 
 4. **Gerakkan servo** sesuai keputusan.
 
-5. **Kirim data** suhu, cahaya, kondisi hujan, mode, dan posisi jemuran melalui Bluetooth.
+5. **Kirim data** suhu, cahaya, kondisi hujan, mode, dan posisi jemuran melalui Serial.
+
+6. **Baca Data** suhu, cahaya, kondisi hujan, mode, dan posisi jemuran melalui Serial Monitor di Wokwi.
 
 ---
-6. **Contoh Gambar Simulasi**
+6. **Contoh Gambar Simulasi & Video Simulasi**
+   
+   👉 [Klik di sini untuk membuka simulasi di Wokwi](https://wokwi.com/projects/429473945254121473)
   <img src="https://github.com/RenayaAjiAydinaHazela/SunSense/blob/main/Program/Asset/Screenshot%202025-04-29%20114008.png">
   
 ---
-
-## 📄 Cara Mensimulasikan
-Gunakan link ini untuk simulasi ke wokwi https://wokwi.com/projects/429473945254121473
