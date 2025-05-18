@@ -5,16 +5,17 @@
 // Pin Configuration
 #define DHT_PIN 5
 #define DHT_TYPE DHT22
-#define LDR_PIN A1         // LDR
-#define RAIN_BUTTON_PIN 4  // Push button hujan
-#define SERVO_PIN 9        // Servo
-#define MODE_BUTTON_PIN 3      // Tombol ganti mode Otomatis/Manual
-#define CONTROL_BUTTON_PIN 4   // Tombol kontrol jemuran Masuk/Keluar (hanya Manual)
+#define LDR_PIN A1
+#define RAIN_SENSOR_PIN 4
+#define SERVO_PIN 9
+#define MODE_BUTTON_PIN 3
+#define CONTROL_BUTTON_PIN 2
 
 const unsigned long DHT_READ_INTERVAL = 2000;
-const int LDR_DARK = 300;    // Ambang batas LDR
-const int UPDATE_INTERVAL = 1000; // Update tiap 1 detik
-const int DEBOUNCE_DELAY = 50;    // Delay debounce tombol
+const int LDR_DARK = 300;
+const int UPDATE_INTERVAL = 1000;
+const int DEBOUNCE_DELAY = 50;
+const int HUMID_THRESHOLD = 70;
 
 DHT dht(DHT_PIN, DHT_TYPE);
 Servo myservo;
@@ -27,48 +28,63 @@ struct SensorData {
   bool decision;
 } data;
 
-bool manualMode = false;    // Default Otomatis
-bool manualDecision = false; // Default jemuran masuk (false = IN, true = OUT)
+bool manualMode = false;
+bool manualDecision = false;
 
 unsigned long lastUpdate = 0;
 unsigned long lastModeButtonPress = 0;
 unsigned long lastControlButtonPress = 0;
 
+// Fungsi gerakan servo halus
+void smoothServoMove(int targetAngle) {
+  int currentAngle = myservo.read();
+  if (currentAngle == targetAngle) return;
+
+  int step = (currentAngle < targetAngle) ? 1 : -1;
+  for (int angle = currentAngle; angle != targetAngle; angle += step) {
+    myservo.write(angle);
+    delay(10);  // Sesuaikan kecepatan
+  }
+  myservo.write(targetAngle);  // Pastikan posisi akhir tepat
+}
+
 void updateSensors() {
   static unsigned long lastDHTRead = 0;
-  if(millis() - lastDHTRead >= DHT_READ_INTERVAL) {
+  if (millis() - lastDHTRead >= DHT_READ_INTERVAL) {
     float t = dht.readTemperature();
     float h = dht.readHumidity();
-    
-    if(!isnan(t)) data.temperature = t;
-    if(!isnan(h)) data.humidity = h;
-    
+    if (!isnan(t)) data.temperature = t;
+    if (!isnan(h)) data.humidity = h;
     lastDHTRead = millis();
   }
+
   data.light = analogRead(LDR_PIN);
-  data.rain = digitalRead(RAIN_BUTTON_PIN) == LOW;
+  data.rain = digitalRead(RAIN_SENSOR_PIN) == LOW;
 }
 
 void makeAutomaticDecision() {
   bool raining = data.rain;
   bool dark = data.light < LDR_DARK;
   bool cold = data.temperature < 25.0;
-  data.decision = !(raining || (dark && cold));
+  bool humid = data.humidity > HUMID_THRESHOLD;
+  data.decision = !(raining || (dark && cold) || (dark && humid));
 }
 
 void controlServo() {
+  int targetAngle = 0;
   if (manualMode) {
-    myservo.write(manualDecision ? 45 : 0); // Manual kontrol
+    targetAngle = manualDecision ? 45 : 0;
   } else {
-    myservo.write(data.decision ? 45 : 0); // Otomatis
+    targetAngle = data.decision ? 45 : 0;
   }
+  smoothServoMove(targetAngle);
 }
 
 void sendData() {
   Serial.print("MODE:");
   Serial.print(manualMode ? "MANUAL" : "AUTO");
   Serial.print("|T:");
-  Serial.print(data.temperature,1);
+  Serial.print(data.temperature, 1);
   Serial.print("|H:");
   Serial.print(data.humidity, 1);
   Serial.print("|L:");
@@ -82,10 +98,9 @@ void sendData() {
 void readModeButton() {
   static bool lastState = HIGH;
   bool currentState = digitalRead(MODE_BUTTON_PIN);
-
-  if (lastState == HIGH && currentState == LOW) { // Tombol ditekan
+  if (lastState == HIGH && currentState == LOW) {
     if (millis() - lastModeButtonPress > DEBOUNCE_DELAY) {
-      manualMode = !manualMode; // Ganti mode
+      manualMode = !manualMode;
       lastModeButtonPress = millis();
     }
   }
@@ -95,31 +110,43 @@ void readModeButton() {
 void readControlButton() {
   static bool lastState = HIGH;
   bool currentState = digitalRead(CONTROL_BUTTON_PIN);
-
-  if (manualMode && lastState == HIGH && currentState == LOW) { // Tombol ditekan
+  if (manualMode && lastState == HIGH && currentState == LOW) {
     if (millis() - lastControlButtonPress > DEBOUNCE_DELAY) {
-      manualDecision = !manualDecision; // Toggle jemuran keluar/masuk
+      manualDecision = !manualDecision;
       lastControlButtonPress = millis();
     }
   }
   lastState = currentState;
 }
 
-void setup() {
-  Serial.begin(9600); // Ini juga buat Bluetooth (pastikan baudrate Bluetooth sama 9600)
-  dht.begin();  // Pindahkan ke sini (sebelum servo.attach())
-  myservo.attach(SERVO_PIN);
+void handleSerialCommand() {
+  if (Serial.available()) {
+    char cmd = Serial.read();
+    if (cmd == 'm') {
+      manualMode = !manualMode;
+      Serial.println(manualMode ? "MODE:MANUAL" : "MODE:AUTO");
+    } else if (cmd == 'c' && manualMode) {
+      manualDecision = !manualDecision;
+      Serial.println(manualDecision ? "POS:OUT" : "POS:IN");
+    }
+  }
+}
 
-  pinMode(RAIN_BUTTON_PIN, INPUT_PULLUP);
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+  myservo.attach(SERVO_PIN);
+  myservo.write(0);  // Posisi awal
+
+  pinMode(RAIN_SENSOR_PIN, INPUT);
   pinMode(MODE_BUTTON_PIN, INPUT_PULLUP);
   pinMode(CONTROL_BUTTON_PIN, INPUT_PULLUP);
-
-  myservo.write(0); // Awal jemuran masuk
 }
 
 void loop() {
-  readModeButton(); // Baca push button mode Otomatis atau Manual
-  readControlButton(); // Control Push Button
+  readModeButton();
+  readControlButton();
+  handleSerialCommand();
 
   if (millis() - lastUpdate > UPDATE_INTERVAL) {
     updateSensors();
@@ -127,7 +154,7 @@ void loop() {
       makeAutomaticDecision();
     }
     controlServo();
-    sendData(); // Kirim data ke HC-05
-    lastUpdate = millis(); // Timer agar tidak ngeblock program lain
+    sendData();
+    lastUpdate = millis();
   }
 }
