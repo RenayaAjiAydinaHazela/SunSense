@@ -28,11 +28,11 @@ Sistem ini tidak hanya dapat memantau, tetapi juga melakukan aksi langsung melal
 
 | Perangkat | Pin Arduino Nano | Jenis Pin | Keterangan |
 | --- | --- | --- | --- |
-| LDR | A0 | Analog | Sensor cahaya |
-| FC-37 (Sensor Hujan) | D2 | Digital | Sensor hujan |
-| DHT22 | D3 | Digital | Suhu & kelembapan |
-| Servo Motor | D5 | PWM | Kendali aktuator |
-| HC-05 Bluetooth | D6 (TX), D7 (RX) | UART | Komunikasi Serial |
+| LDR | A1 | Analog | Sensor cahaya |
+| FC-37 (Sensor Hujan) | D8 | Digital | Sensor hujan |
+| DHT22 | D6 | Digital | Suhu & kelembapan |
+| Servo Motor | D7 | PWM | Kendali aktuator |
+| HC-05 Bluetooth | D0 (TX), D1 (RX) | UART | Komunikasi Serial |
 
 ---
 
@@ -50,7 +50,7 @@ Motor servo dikendalikan melalui **pin D5** menggunakan sinyal **PWM (Pulse Widt
 
 ### 📶 HC-05 (Bluetooth Module)
 
-Modul HC-05 dihubungkan ke pin **D6 (TX)** dan **D7 (RX)** Arduino, memungkinkan komunikasi **serial dua arah** antara sistem dan aplikasi pada perangkat seluler. Modul ini berfungsi sebagai antarmuka **nirkabel** yang memudahkan pengguna untuk **memantau status sensor secara real-time** serta **mengontrol sistem jemuran otomatis** langsung dari jarak dekat melalui koneksi Bluetooth. Integrasi ini meningkatkan fleksibilitas dan kemudahan dalam pengoperasian sistem.
+Modul HC-05 dihubungkan ke pin **D0 (TX)** dan **D1 (RX)** Arduino, memungkinkan komunikasi **serial dua arah** antara sistem dan aplikasi pada perangkat seluler. Modul ini berfungsi sebagai antarmuka **nirkabel** yang memudahkan pengguna untuk **memantau status sensor secara real-time** serta **mengontrol sistem jemuran otomatis** langsung dari jarak dekat melalui koneksi Bluetooth. Integrasi ini meningkatkan fleksibilitas dan kemudahan dalam pengoperasian sistem.
 
 ---
 
@@ -58,7 +58,7 @@ Modul HC-05 dihubungkan ke pin **D6 (TX)** dan **D7 (RX)** Arduino, memungkinkan
 
 ### 🟡 LDR (Light Dependent Resistor)
 
-Sensor LDR terhubung ke pin **A0** dan menghasilkan sinyal **analog** yang merepresentasikan intensitas pencahayaan lingkungan. Arduino membaca perubahan tegangan dalam rentang **0–5V** dan menginterpretasikannya sebagai indikator cuaca cerah atau mendung. Nilai ini digunakan sistem untuk membantu menentukan apakah jemuran otomatis perlu **dibuka atau ditutup**, berdasarkan ambang batas pencahayaan yang telah diprogram
+Sensor LDR terhubung ke pin **A1** dan menghasilkan sinyal **analog** yang merepresentasikan intensitas pencahayaan lingkungan. Arduino membaca perubahan tegangan dalam rentang **0–5V** dan menginterpretasikannya sebagai indikator cuaca cerah atau mendung. Nilai ini digunakan sistem untuk membantu menentukan apakah jemuran otomatis perlu **dibuka atau ditutup**, berdasarkan ambang batas pencahayaan yang telah diprogram
 
 ### 📥 Digital Input
 
@@ -66,11 +66,11 @@ Sensor LDR terhubung ke pin **A0** dan menghasilkan sinyal **analog** yang merep
 
 ### 🌧️ FC-37 (Sensor Hujan)
 
-Sensor hujan FC-37 dihubungkan ke pin **D2** dan memberikan sinyal digital berupa **HIGH** atau **LOW** berdasarkan kondisi permukaan sensornya. Ketika permukaan sensor dalam kondisi **basah**, output akan **LOW**, dan ketika **kering**, output akan **HIGH**. Informasi ini digunakan sistem sebagai indikator otomatis untuk mendeteksi keberadaan hujan dan mengaktifkan mekanisme penutupan jemuran.
+Sensor hujan FC-37 dihubungkan ke pin **D8** dan memberikan sinyal digital berupa **HIGH** atau **LOW** berdasarkan kondisi permukaan sensornya. Ketika permukaan sensor dalam kondisi **basah**, output akan **LOW**, dan ketika **kering**, output akan **HIGH**. Informasi ini digunakan sistem sebagai indikator otomatis untuk mendeteksi keberadaan hujan dan mengaktifkan mekanisme penutupan jemuran.
 
 ### 🌡️ DHT22 (Sensor Suhu & Kelembapan)
 
-Terhubung ke pin **D3**, sensor DHT22 menggunakan protokol komunikasi **single-wire (*One-Wire*)** untuk mengirimkan data suhu dan kelembapan secara berkala. Informasi lingkungan ini menjadi parameter pendukung yang penting dalam sistem pengambilan keputusan, guna memastikan proses pengeringan berjalan pada kondisi yang optimal dan efisien.
+Terhubung ke pin **D6**, sensor DHT22 menggunakan protokol komunikasi **single-wire (*One-Wire*)** untuk mengirimkan data suhu dan kelembapan secara berkala. Informasi lingkungan ini menjadi parameter pendukung yang penting dalam sistem pengambilan keputusan, guna memastikan proses pengeringan berjalan pada kondisi yang optimal dan efisien.
 
 ---
 
