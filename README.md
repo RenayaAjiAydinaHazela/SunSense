@@ -69,7 +69,7 @@ Keunggulan-keunggulan ini menjadikan **SunSense** tidak hanya sebagai alat otoma
 
 **SunSense** memiliki potensi pasar yang besar dalam sektor rumah pintar (smart home) dan teknologi ramah lingkungan. Dengan semakin meningkatnya minat terhadap solusi rumah tangga yang otomatis dan efisien, **SunSense** siap memenuhi kebutuhan masyarakat yang menginginkan cara hidup yang lebih praktis, hemat energi, dan ramah lingkungan.
 
-### Peluang Pasar:
+### Potensi Pasar:
 
 1. **Rumah Tangga di Daerah Tropis atau Beriklim Tidak Menentu**
     
@@ -88,7 +88,7 @@ Keunggulan-keunggulan ini menjadikan **SunSense** tidak hanya sebagai alat otoma
     Dengan semakin tingginya kesadaran akan keberlanjutan, **SunSense** dapat menarik minat pasar yang peduli dengan solusi ramah lingkungan. Sistem yang hemat energi dan kompatibel dengan tenaga surya memberikan peluang untuk memperkenalkan teknologi hijau yang mengurangi pemborosan energi.
     
 
-### Potensi Komersial:
+### Peluang Investasi:
 
 **SunSense** bukan hanya solusi lokal, tetapi memiliki potensi besar untuk berkembang di pasar global. Seiring dengan tren meningkatnya adopsi rumah pintar dan teknologi ramah lingkungan, **SunSense** dapat meraih pangsa pasar yang lebih luas. Peluang investasi di sektor ini juga sangat menarik, karena adanya permintaan yang terus berkembang terhadap solusi yang mengintegrasikan teknologi pintar dengan kehidupan sehari-hari dan mendukung keberlanjutan.
 
