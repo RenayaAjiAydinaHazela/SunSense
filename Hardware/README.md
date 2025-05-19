@@ -86,9 +86,7 @@ Instal melalui Library Manager di Arduino IDE:
 
 ## 🏷️ Lisensi
 
-**Proyek ini merupakan inovasi berbasis mikrokontroler yang dikembangkan secara mandiri oleh mahasiswa Electronic Engineering Polytechnic Institute of Surabaya (EEPIS) untuk menjawab kebutuhan otomatisasi rumah tangga yang cerdas dan efisien. 
-SunSense dirancang dengan pendekatan teknis yang solid, menggunakan sensor cuaca dan aktuator presisi untuk mendeteksi kondisi lingkungan secara real-time dan mengoperasikan sistem jemuran otomatis.** 
+Proyek ini merupakan inovasi berbasis mikrokontroler yang dikembangkan secara mandiri oleh mahasiswa **Electronic Engineering Polytechnic Institute of Surabaya (EEPIS)** untuk menjawab kebutuhan otomatisasi rumah tangga yang cerdas dan efisien. 
+SunSense dirancang dengan pendekatan teknis yang solid, menggunakan sensor cuaca dan aktuator presisi untuk mendeteksi kondisi lingkungan secara real-time dan mengoperasikan sistem jemuran otomatis.
 
-**Proyek ini terbuka untuk dikembangkan lebih lanjut dan dapat dimodifikasi untuk kebutuhan komersial maupun edukatif, selama tetap mencantumkan sumber.** 
-
-**Dengan pendekatan modular, efisien, dan berbasis data, SunSense menjadi solusi potensial dalam pengembangan smart home berbasis teknologi lokal yang scalable dan dapat diandalkan.**
+Proyek ini terbuka untuk dikembangkan lebih lanjut dan dapat dimodifikasi untuk kebutuhan komersial maupun edukatif, selama tetap mencantumkan sumber. Dengan pendekatan modular, efisien, dan berbasis data, SunSense menjadi solusi potensial dalam pengembangan smart home berbasis teknologi lokal yang scalable dan dapat diandalkan.
