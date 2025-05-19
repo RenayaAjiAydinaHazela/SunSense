@@ -17,9 +17,9 @@ Sistem ini tidak hanya dapat memantau, tetapi juga melakukan aksi langsung melal
 | **Motor Servo** | SG90 | Aktuator untuk menggerakkan mekanisme buka-tutup jemuran secara otomatis. |
 | **Driver Motor** | L298N | Mengatur suplai daya dan sinyal kontrol ke motor dari mikrokontroler. |
 | **Regulator Tegangan** | L7805 | Mengatur dan menstabilkan tegangan 5V dari sumber daya eksternal ke komponen seperti mikrokontroler dan sensor. |
-| **Bluetooth Module** | HC-05 / HC-06 | Komunikasi serial jarak dekat untuk kontrol manual dan monitoring via aplikasi mobile. |
-| **Power Supply** | - | Menyediakan daya untuk menggerakkan motor dan sistem kontrol secara keseluruhan. |
-| **PCB** | - | Menyusun dan menyambungkan seluruh rangkaian elektronik secara rapi dan terorganisir. |
+| **Bluetooth Module** | HC-05 | Komunikasi serial jarak dekat untuk kontrol manual dan monitoring via aplikasi mobile. |
+| **Power Supply (Baterai)** | Ultrafire 15650A 3000mAh | Menyediakan daya untuk menggerakkan motor dan sistem kontrol secara keseluruhan. |
+| **PCB** | Single Layer | Menyusun dan menyambungkan seluruh rangkaian elektronik secara rapi dan terorganisir. |
 | **Bearing / Pulley** | - | Mendukung gerakan mekanik agar lebih halus, stabil, dan minim gesekan. |
 
 ---
