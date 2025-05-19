@@ -14,18 +14,19 @@ Konsep ini juga terbuka untuk pengembangan lebih lanjut, seperti integrasi denga
 
 SunSense dibangun dari serangkaian komponen utama yang saling terintegrasi dan memiliki peran spesifik dalam mendeteksi, mengolah, serta merespons kondisi cuaca. Setiap komponen dipilih berdasarkan pertimbangan efisiensi, kinerja, dan kemudahan integrasi, sehingga sistem tidak hanya bekerja optimal, tetapi juga mudah dikembangkan lebih lanjut.
 
-| Komponen | Tipe | Fungsi | Harga |
+| **Komponen** | **Tipe** | **Fungsi** | Harga |
 | --- | --- | --- | --- |
-| Mikrokontroler | Arduino Nano | Mengelola seluruh proses logika, pengambilan keputusan berdasarkan input sensor. | 40.000 |
-| Sensor Cahaya | LDR | Mendeteksi tingkat pencahayaan matahari. Digunakan untuk memutuskan kapan jemuran boleh terbuka. | 2.000 |
-| Sensor Hujan | Rain Drop | Menentukan keberadaan air/hujan melalui hambatan listrik. Jika mendeteksi hujan, sistem menutup jemuran. | 15.000 |
-| Sensor Suhu & Kelembapan | DHT 22 | Memberikan data lingkungan tambahan untuk mengatur kondisi optimal pengeringan. | 25.000 |
-| Motor Servo | SG90 | Menggerakkan mekanisme buka-tutup jemuran secara otomatis. | 50.000 |
-| Regulator Tegangan | L7805 | Mengatur dari batrai agar menjadi 5 V sesuai dengan mikrokontroler Arduino Nano. | 1.500 |
-| Bluetooth Module | HC - 05 | Komunikasi jarak dekat untuk kontrol manual dan monitoring via aplikasi mobile. | 35.000 |
-| Baterai | Lion 3,7 V (2) | Menyediakan daya untuk menggerakkan motor dan sistem kontrol secara keseluruhan. | 24.000 |
-| PCB | | Menyusun dan menyambungkan seluruh rangkaian elektronik secara rapi. | 25.000 |
-| Bearing / Pulley |  | Mendukung gerakan mekanik agar lebih halus, stabil, dan minim gesekan. | 20.000 |
+| **Mikrokontroler** | Arduino Nano | Mikrokontroler utama yang mengelola seluruh proses logika, pengambilan keputusan berdasarkan input sensor. |  |
+| **Sensor Cahaya** | LDR | Mendeteksi intensitas pencahayaan matahari. Digunakan untuk memutuskan kapan jemuran boleh terbuka. | 10.000 |
+| **Sensor Hujan** | FC-37 (Rain Drop) | Menentukan keberadaan air/hujan melalui hambatan listrik. Jika mendeteksi hujan (basah), sistem menutup jemuran. | 20.000 |
+| **Sensor Suhu**  | DHT22 | Memberikan data suhu dan kelembapan lingkungan sebagai informasi tambahan untuk mengatur kondisi optimal pengeringan. | 15.000 |
+| **Motor Servo** | SG90 | Aktuator untuk menggerakkan mekanisme buka-tutup jemuran secara otomatis. | 50.000 |
+| **Driver Motor** | L298N | Mengatur suplai daya dan sinyal kontrol ke motor dari mikrokontroler. | 25.000 |
+| **Regulator Tegangan** | L7805 | Mengatur dan menstabilkan tegangan 5V dari sumber daya eksternal ke komponen seperti mikrokontroler dan sensor. | 50.000 |
+| **Bluetooth Module** | HC-05 / HC-06 | Komunikasi serial jarak dekat untuk kontrol manual dan monitoring via aplikasi mobile. | 40.000 |
+| **Power Supply** | - | Menyediakan daya untuk menggerakkan motor dan sistem kontrol secara keseluruhan. | 50.000 |
+| **PCB** | - | Menyusun dan menyambungkan seluruh rangkaian elektronik secara rapi dan terorganisir. | 20.000 |
+| **Bearing / Pulley** | - | Mendukung gerakan mekanik agar lebih halus, stabil, dan minim gesekan. |  |
 
 Tak hanya berfokus pada kecanggihan sensor dan kendali otomatis, SunSense juga mengedepankan stabilitas sistem secara menyeluruh. Desainnya memperhatikan keteraturan sirkuit elektronik agar lebih aman dan efisien, sekaligus memastikan pergerakan mekanik berjalan dengan lancar tanpa hambatan berarti. 
 
