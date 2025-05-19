@@ -230,6 +230,8 @@ Data ini juga dapat dimanfaatkan pada tahap selanjutnya untuk **dikirim ke aplik
 ## 💻 **Simulasi Online**
    
    👉 [Klik di sini untuk membuka simulasi di Wokwi](https://wokwi.com/projects/429473945254121473)
+
+
   <img src="https://github.com/RenayaAjiAydinaHazela/SunSense/blob/main/Program/Asset/Screenshot%202025-05-11%20200524.png">
   
 ---
