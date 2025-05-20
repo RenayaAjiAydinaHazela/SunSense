@@ -19,7 +19,7 @@ Beberapa komponen fisik digantikan dengan **potensiometer** dan **push button** 
     
     Menggunakan komponen pengganti untuk mencerminkan perilaku sensor asli. Simulasi ini menguji logika pengendalian servo dan pengambilan keputusan berdasarkan parameter lingkungan.
     
-- **🔧 Program Asli Hardware (Final Deployment)** *(Sedang dikembangkan)*
+- **🔧 Program Asli Hardware (Final Deployment)** 
     
     Dirancang untuk implementasi fisik dengan koneksi sensor dan aktuator asli, termasuk penggunaan **DHT22**, **FC-37**, **LDR**, serta **HC-05** untuk integrasi mobile app melalui Bluetooth.
     
@@ -62,9 +62,9 @@ Beberapa komponen fisik digantikan dengan **potensiometer** dan **push button** 
 | Perangkat Asli | Pin Arduino Nano | Tipe Pin | Keterangan |
 | --- | --- | --- | --- |
 | LDR (Sensor Cahaya) | A1 | Analog | Mengukur intensitas pencahayaan |
-| FC-37 (Sensor Hujan) | D4 | Digital | Deteksi permukaan basah/kering |
-| DHT22 | D5 | Digital | Mengukur suhu & kelembapan |
-| Servo Motor | D9 | PWM | Menggerakkan mekanisme jemuran |
+| FC-37 (Sensor Hujan) | D8 | Digital | Deteksi permukaan basah/kering |
+| DHT22 | D6 | Digital | Mengukur suhu & kelembapan |
+| Servo Motor | D7 | PWM | Menggerakkan mekanisme jemuran |
 | HC-05 Bluetooth | D0 (TX), D1 (RX) | UART | Komunikasi dengan mobile app |
 
 ---
