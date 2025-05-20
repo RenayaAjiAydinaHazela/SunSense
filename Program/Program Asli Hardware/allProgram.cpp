@@ -3,17 +3,17 @@
 #include <DHT.h>
 
 // Pin Configuration
-#define DHT_PIN 5
+#define DHT_PIN 6
 #define DHT_TYPE DHT22
 #define LDR_PIN A1
-#define RAIN_SENSOR_PIN 4
-#define SERVO_PIN 9
+#define RAIN_SENSOR_PIN 8
+#define SERVO_PIN 7
 #define MODE_BUTTON_PIN 3
 #define CONTROL_BUTTON_PIN 2
 
-const unsigned long DHT_READ_INTERVAL = 2000;
+const unsigned long DHT_READ_INTERVAL = 1000;
 const int LDR_DARK = 300;
-const int UPDATE_INTERVAL = 1000;
+const int UPDATE_INTERVAL = 500;
 const int DEBOUNCE_DELAY = 50;
 const int HUMID_THRESHOLD = 70;
 
@@ -81,7 +81,7 @@ void controlServo() {
 }
 
 void sendData() {
-  Serial.print("MODE:");
+  Serial.print("<MODE:");
   Serial.print(manualMode ? "MANUAL" : "AUTO");
   Serial.print("|T:");
   Serial.print(data.temperature, 1);
@@ -93,6 +93,7 @@ void sendData() {
   Serial.print(data.rain ? "RAINING" : "DRY");
   Serial.print("|D:");
   Serial.println((manualMode ? manualDecision : data.decision) ? "OUT" : "IN");
+  Serial.println(">");
 }
 
 void readModeButton() {
